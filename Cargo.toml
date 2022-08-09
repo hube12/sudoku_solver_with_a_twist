@@ -1,0 +1,19 @@
+[package]
+name = "sudoku_solver_with_a_twist"
+version = "0.0.0"
+authors = ["Neil <neilhube12@gmail.com>"]
+description = "Just a bad sudoku solver"
+keywords = ["supposed to be a compile time procmacro"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+proc-macro2 = "1.0"
+syn = "1.0"
+
+[[bin]]
+name="sudoku"
+path="src/main.rs"
